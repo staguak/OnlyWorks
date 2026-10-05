@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aktualizator NL — polityka prywatności</title>
+  <style>body{font:18px/1.65 system-ui,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#18212b;background:#fff}a{color:#064f9d}code{overflow-wrap:anywhere}nav a{margin-right:18px}h1,h2{line-height:1.25}</style>
+</head>
+<body>
+  <nav aria-label="Nawigacja"><a href="index.html">Opis programu</a><a href="terms.html">Warunki</a></nav>
+  <main>
+    <h1>Polityka prywatności — Aktualizator NL</h1>
+    <p>Obowiązuje od 05.10.2026. Dokument dotyczy obecnej, prywatnej wersji programu. Kontakt w sprawach danych i działania programu: <a href="mailto:staguak@gmail.com">staguak@gmail.com</a>.</p>
+    <h2>Dane i cel dostępu</h2>
+    <p>Program korzysta z Google Drive API, aby zapisywać przygotowane paczki materiałów prawnych na koncie właściciela projektu. Używa wyłącznie zakresu <code>drive.file</code>. Wyszukuje metadane własnych folderów, w tym identyfikatory, nazwy, folder nadrzędny i prywatne znaczniki aplikacji, oraz przesyła nowe pliki wynikowe.</p>
+    <p>Obecna implementacja nie pobiera treści istniejących dokumentów użytkownika z Dysku, nie odczytuje Gmaila, kontaktów ani kalendarza i nie żąda hasła do konta Google. Autoryzacja odbywa się w Google.</p>
+    <p>OAuth obejmuje pliki utworzone przez aplikację lub jawnie jej autoryzowane. Przeniesienie takiego pliku poza folder aktualizatora nie cofa jego autoryzacji. Nie należy udostępniać aplikacji dodatkowych plików.</p>
+    <h2>Przechowywanie i zabezpieczenia</h2>
+    <p>Identyfikator klienta, sekret klienta i token odświeżania przechowywane są w GitHub Actions Secret prywatnego repozytorium. Podczas uruchomienia są udostępniane środowisku wykonawczemu; token dostępu jest uzyskiwany automatycznie. Dane uwierzytelniające nie są przeznaczone do publikacji na tej stronie ani w repozytorium strony.</p>
+    <p>Pliki wynikowe pozostają na Dysku do czasu usunięcia przez właściciela. Uploader nie usuwa ich automatycznie. Kopia wyniku w GitHub Actions ma ustawioną retencję 14 dni, ale może zostać usunięta wcześniej przez kolejny przebieg. Punkty wznowienia po błędzie mają retencję 7 dni i są usuwane po udanej publikacji. Logi podlegają ustawieniom retencji GitHub Actions.</p>
+    <h2>Udostępnianie i usługodawcy</h2>
+    <p>Google obsługuje autoryzację i przechowywanie plików na Dysku. GitHub obsługuje wykonanie programu, sekrety, logi, artefakty i hosting strony. Dostęp do zasobów projektu zależy także od uprawnień nadanych przez właściciela w tych usługach. Program nie tworzy publicznych linków do wyników.</p>
+    <p>Dane Google nie są wykorzystywane przez ten projekt do reklam, sprzedaży, profilowania ani trenowania modeli AI. Ich użycie ogranicza się do opisanej funkcji. Korzystanie z informacji otrzymanych z Google API podlega <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, w tym wymaganiom Limited Use.</p>
+    <h2>Cofnięcie dostępu i usunięcie</h2>
+    <p>Dostęp można cofnąć w <a href="https://myaccount.google.com/connections">połączeniach konta Google</a>. Aby zatrzymać kolejne uruchomienia, usuń sekret OAuth lub wyłącz workflow w GitHub. Cofnięcie dostępu nie usuwa automatycznie wcześniejszych plików.</p>
+    <p>Pliki i foldery na Dysku oraz artefakty i logi GitHub należy usuwać w odpowiednich usługach. Usunięcie danych podlega również mechanizmom kosza i retencji tych usług. W razie potrzeby skontaktuj się z opiekunem projektu.</p>
+    <h2>Ta strona</h2>
+    <p>Strona nie zawiera formularza logowania, skryptów analitycznych ani własnych mechanizmów śledzenia. GitHub Pages zapisuje adresy IP odwiedzających dla bezpieczeństwa zgodnie z <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">polityką prywatności GitHub</a>. Usługi Google działają zgodnie z <a href="https://policies.google.com/privacy">polityką prywatności Google</a>.</p>
+    <h2>Zmiany</h2>
+    <p>Przed zmianą zakresów OAuth, sposobu przetwarzania danych lub udostępnieniem programu innym użytkownikom należy zaktualizować tę politykę oraz konfigurację Google.</p>
+  </main>
+</body>
+</html>

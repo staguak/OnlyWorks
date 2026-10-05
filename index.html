@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aktualizator NL — opis programu</title>
+  <style>body{font:18px/1.65 system-ui,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#18212b;background:#fff}a{color:#064f9d}code{overflow-wrap:anywhere}nav a{margin-right:18px}h1,h2{line-height:1.25}</style>
+</head>
+<body>
+  <nav aria-label="Nawigacja"><a href="privacy.html">Prywatność</a><a href="terms.html">Warunki</a></nav>
+  <main>
+    <h1>Aktualizator NL</h1>
+    <p>Aktualizator NL jest prywatnym narzędziem do przygotowywania paczek materiałów dotyczących prawa niderlandzkiego i zapisywania wyników na Dysku Google właściciela projektu. Nie jest usługą udostępnianą ogółowi użytkowników.</p>
+    <h2>Działanie</h2>
+    <p>Program jest uruchamiany ręcznie w GitHub Actions w prywatnym repozytorium. Przygotowuje pliki wynikowe, a następnie tworzy lub odnajduje własną strukturę <strong>Aktualizator → Aktualizator NL</strong>. Każdy przebieg zapisuje nową paczkę w podfolderze oznaczonym datą i godziną. Obecny uploader nie usuwa ani nie nadpisuje istniejących plików Dysku.</p>
+    <h2>Po co dostęp do Google?</h2>
+    <p>OAuth służy wyłącznie do autoryzowania zapisu paczek na Dysku. Program wymaga tylko zakresu <code>https://www.googleapis.com/auth/drive.file</code> i odrzuca tokeny z dodatkowymi zakresami.</p>
+    <p>Zakres ten obejmuje pliki utworzone przez aplikację lub oddzielnie jej autoryzowane; nie daje ogólnego dostępu do całego Dysku. Ograniczenie zapisu do powyższej struktury wynika dodatkowo z kodu programu. Sam OAuth nie jest blokadą według ścieżki folderu.</p>
+    <h2>Kontakt</h2>
+    <p>Opiekun projektu: <a href="mailto:staguak@gmail.com">staguak@gmail.com</a>.</p>
+    <p>Przed autoryzacją przeczytaj <a href="privacy.html">politykę prywatności</a> i <a href="terms.html">warunki korzystania</a>.</p>
+  </main>
+  <footer><p>Aktualizacja: 05.10.2026. Projekt niezależny od Google i GitHub.</p></footer>
+</body>
+</html>
